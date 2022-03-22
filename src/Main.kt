@@ -1,16 +1,16 @@
 fun main(){
-    char()
+    char("codehive")
     var w = remainder(9 ,2)
     println(w)
-    greeting("Joan", 21)
+    var y = greeting("Joan", 21)
+    println(y)
     var s = count("I am tall")
     println(s)
 }
     //Given a string “codeHive”. Write a function that prints out a string composed
     //of the fifth, sixth, seventh and eighth  characters of the string
 
-fun char(){
-    var name = "codeHive"
+fun char(name:String){
     var n = name[4].toString()+ name[5]+ name[6]+name[7]
     println(n)
 }
@@ -23,9 +23,9 @@ fun remainder(a:Int,b:Int):Int{
   //Write a function that takes in two parameters, name and age and returns a
   //String with this structure “Hi, my name is p and I am z years old.” Where p
   //and  z are your  name and age respectively
-fun greeting(name:String,age:Int) {
+fun greeting(name:String,age:Int):String {
     var b = ("Hi my name is $name I am $age years old")
-    println(b)
+    return b
 }
 //Write a function that takes in a string and returns its length
 fun count(name: String):Int {
